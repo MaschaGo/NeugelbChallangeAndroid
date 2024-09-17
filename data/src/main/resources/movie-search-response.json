@@ -1,0 +1,68 @@
+{
+  "page": 1,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/q7M0JpPixbEYT8EhnI7wTEMONxz.jpg",
+      "genre_ids": [
+        878,
+        28,
+        12
+      ],
+      "id": 13475,
+      "original_language": "en",
+      "original_title": "Star Trek",
+      "overview": "The fate of the galaxy rests in the hands of bitter rivals. One, James Kirk, is a delinquent, thrill-seeking Iowa farm boy. The other, Spock, a Vulcan, was raised in a logic-based society that rejects all emotion. As fiery instinct clashes with calm reason, their unlikely but powerful partnership is the only thing capable of leading their crew through unimaginable danger, boldly going where no one has gone before. The human adventure has begun again.",
+      "popularity": 56.593,
+      "poster_path": "/lV5OpzAss1z06YNagOVap1I35mH.jpg",
+      "release_date": "2009-05-06",
+      "title": "Star Trek",
+      "video": false,
+      "vote_average": 7.429,
+      "vote_count": 9753
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/m4F1KRK5jAoQHi2mKDFE2jFKEIb.jpg",
+      "genre_ids": [
+        28,
+        12,
+        878
+      ],
+      "id": 188927,
+      "original_language": "en",
+      "original_title": "Star Trek Beyond",
+      "overview": "The USS Enterprise crew explores the furthest reaches of uncharted space, where they encounter a mysterious new enemy who puts them and everything the Federation stands for to the test.",
+      "popularity": 35.197,
+      "poster_path": "/yOnd3XQIg7JBmu0UuBjZyLdsxQD.jpg",
+      "release_date": "2016-07-07",
+      "title": "Star Trek Beyond",
+      "video": false,
+      "vote_average": 6.784,
+      "vote_count": 6538
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/wygUDDRNpeKUnkekRGeLCZM93tA.jpg",
+      "genre_ids": [
+        878,
+        28,
+        12,
+        53
+      ],
+      "id": 199,
+      "original_language": "en",
+      "original_title": "Star Trek: First Contact",
+      "overview": "The Borg, a relentless race of cyborgs, are on a direct course for Earth. Violating orders to stay away from the battle, Captain Picard and the crew of the newly-commissioned USS Enterprise E pursue the Borg back in time to prevent the invaders from changing Federation history and assimilating the galaxy.",
+      "popularity": 22.871,
+      "poster_path": "/vrC1lkTktFQ4AqBfqf4PXoDDLcw.jpg",
+      "release_date": "1996-11-22",
+      "title": "Star Trek: First Contact",
+      "video": false,
+      "vote_average": 7.295,
+      "vote_count": 1727
+    }
+  ],
+  "total_pages": 1,
+  "total_results": 3
+}

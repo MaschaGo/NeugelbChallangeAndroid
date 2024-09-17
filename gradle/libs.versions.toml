@@ -1,0 +1,104 @@
+[versions]
+androidGradlePlugin = "8.6.0"
+kotlinGradlePlugin = "2.0.20"
+ksp = "2.0.20-1.0.25"
+
+# Core
+androidxComposeBom = "2024.09.01"
+activityCompose = "1.9.2"
+navigationCompose = "2.8.0"
+
+coreKtx = "1.13.1"
+androidxLifecycle = "2.8.5"
+retrofit = "2.11.0"
+okHttp = "4.12.0"
+coroutine = "1.8.1"
+gson = "2.11.0"
+coil = "2.7.0"
+
+koinBom = "3.5.6"
+
+paging = "3.3.2"
+paginationCompose = "3.3.2"
+
+timber = "5.0.1"
+
+# Testing
+junit = "4.13.2"
+junitExt = "1.2.1"
+espressoCore = "3.6.1"
+mockk = "1.13.12"
+mockitoKotlin = "2.2.0"
+mockkAndroid = "1.13.12"
+
+[libraries]
+# Define the libraries
+# Lifecycle
+lifecycle_runtime_ktx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "androidxLifecycle" }
+lifecycle_viewmodel_compose = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "androidxLifecycle" }
+lifecycle_runtime_compose = { module = "androidx.lifecycle:lifecycle-runtime-compose", version.ref = "androidxLifecycle" }
+
+# Compose libraries
+compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "androidxComposeBom" }
+compose_ui = { group = "androidx.compose.ui", name = "ui" }
+compose_tooling_preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+compose_tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+compose_ui_test_manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+compose_material3 = { group = "androidx.compose.material3", name = "material3" }
+compose_icons = { group = "androidx.compose.material", name = "material-icons-extended" }
+compose_ui_test_junit = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+
+# Activity
+activity_compose = { module = "androidx.activity:activity-compose", version.ref = "activityCompose" }
+androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigationCompose" }
+# Retrofit
+retrofit_core = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+retrofit_gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit" }
+okhttp-logging = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okHttp"}
+mockwebserver = { module = "com.squareup.okhttp3:mockwebserver", version.ref = "okHttp" }
+# Gson
+gson_core = { module = "com.google.code.gson:gson", version.ref = "gson" }
+# Coil
+coil_core = { module = "io.coil-kt:coil-compose", version.ref = "coil" }
+coil-svg = { group = "io.coil-kt", name = "coil-svg", version.ref = "coil" }
+#Paging
+paging-runtime = { group = "androidx.paging", name = "paging-runtime", version.ref = "paging" }
+paging-compose = { group = "androidx.paging", name = "paging-compose", version.ref = "paginationCompose" }
+paging_test = { group = "androidx.paging", name = "paging-common", version.ref = "paging" }
+#Logging
+timber = { module = "com.jakewharton.timber:timber", version.ref = "timber" }
+# Coroutines
+coroutine_core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutine" }
+coroutine_android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "coroutine" }
+coroutine_test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "coroutine" }
+# Koin
+koin-bom = { module = "io.insert-koin:koin-bom", version.ref = "koinBom" }
+koin-core = { module = "io.insert-koin:koin-core" }
+koin-android = { group = "io.insert-koin", name = "koin-android" }
+koin-androidx-compose = { group = "io.insert-koin", name = "koin-androidx-compose" }
+koin-androidx-navigation = { group = "io.insert-koin", name = "koin-androidx-navigation" }
+# Android core
+core_ktx = { module = "androidx.core:core-ktx", version.ref = "coreKtx" }
+# Test
+junit = { module = "junit:junit", version.ref = "junit" }
+mockk = { module = "io.mockk:mockk", version.ref = "mockk" }
+mockito-kotlin = { module = "com.nhaarman.mockitokotlin2:mockito-kotlin", version.ref = "mockitoKotlin" }
+mockk-android = { module = "io.mockk:mockk-android", version.ref = "mockkAndroid" }
+# AndroidTest
+test_ext = { module = "androidx.test.ext:junit", version.ref = "junitExt" }
+test_espresso = { module = "androidx.test.espresso:espresso-core", version.ref = "espressoCore" }
+
+[bundles]
+# Define bundles/groups of libraries
+compose = ["compose_ui", "compose_material3", "compose_tooling_preview", "compose_icons"]
+compose_debug = ["compose_tooling", "compose_ui_test_manifest"]
+coroutine = ["coroutine_core", "coroutine_android"]
+retrofit = ["retrofit_core", "retrofit_gson"]
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
+android-library = { id = "com.android.library", version.ref = "androidGradlePlugin" }
+kotlin = { id = "org.jetbrains.kotlin.android", version.ref = "kotlinGradlePlugin" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlinGradlePlugin" }
+
