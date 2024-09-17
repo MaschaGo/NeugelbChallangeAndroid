@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.maschago.neugelbchallangeandroid.core"
-    compileSdk =  (rootProject.extra["compileSdk"] as Int)
+    compileSdk = (rootProject.extra["compileSdk"] as Int)
 
     defaultConfig {
         minSdk = (rootProject.extra["minSdk"] as Int)

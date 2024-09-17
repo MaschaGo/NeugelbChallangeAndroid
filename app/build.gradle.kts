@@ -7,7 +7,7 @@ plugins {
 
 android {
     namespace = "com.maschago.neugelbchallangeandroid"
-    compileSdk =  (rootProject.extra["compileSdk"] as Int)
+    compileSdk = (rootProject.extra["compileSdk"] as Int)
 
     defaultConfig {
         applicationId = "com.maschago.neugelbchallangeandroid"
@@ -68,15 +68,15 @@ android {
 
 
 ksp {
-    arg("KOIN_CONFIG_CHECK","true")
+    arg("KOIN_CONFIG_CHECK", "true")
 }
 
 dependencies {
 
-    implementation (project(":core"))
-    implementation (project(":data"))
-    implementation (project(":domain"))
-    implementation (project(":presentation"))
+    implementation(project(":core"))
+    implementation(project(":data"))
+    implementation(project(":domain"))
+    implementation(project(":presentation"))
 
     implementation(libs.core.ktx)
     implementation(libs.lifecycle.runtime.ktx)
@@ -101,7 +101,6 @@ dependencies {
     implementation(libs.coil.core)
     implementation(libs.coil.svg)
 
-    // Logging
     implementation(libs.timber)
 
     testImplementation(platform(libs.compose.bom))

@@ -20,7 +20,7 @@ fun SimpleText(
     text: String = "",
     style: TextStyle = MaterialTheme.typography.bodySmall,
     color: Color = MaterialTheme.colorScheme.onBackground,
-    textAlign: TextAlign? = null
+    textAlign: TextAlign? = null,
 ) {
     Text(
         text = text,
@@ -76,7 +76,7 @@ private fun TextVerticalPreview() = NeugelbChallangeAndroidTheme {
 }
 
 @Preview(name = "Light Mode", uiMode = Configuration.UI_MODE_NIGHT_NO)
-@Preview(name = "Dark Mode", showBackground = true, backgroundColor = 0xFF121212,uiMode = Configuration.UI_MODE_NIGHT_YES)
+@Preview(name = "Dark Mode", showBackground = true, backgroundColor = 0xFF121212, uiMode = Configuration.UI_MODE_NIGHT_YES)
 @Composable
 private fun TextHorizontalPreview() = NeugelbChallangeAndroidTheme {
     TextLabelWithTitleHorizontal(

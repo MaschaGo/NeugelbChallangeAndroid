@@ -41,7 +41,7 @@ fun MovieItem(
             .clickable { onClick() },
         contentAlignment = Alignment.TopCenter
     ) {
-        Column(modifier =  modifier.padding(bottom = 8.dp), horizontalAlignment = Alignment.CenterHorizontally) {
+        Column(modifier = modifier.padding(bottom = 8.dp), horizontalAlignment = Alignment.CenterHorizontally) {
 
             Box(
                 modifier = modifier
@@ -73,7 +73,7 @@ fun MovieItem(
 }
 
 @Preview(name = "Light Mode", uiMode = Configuration.UI_MODE_NIGHT_NO)
-@Preview(name = "Dark Mode",showBackground = true, backgroundColor = 0xFF121212, uiMode = Configuration.UI_MODE_NIGHT_YES)
+@Preview(name = "Dark Mode", showBackground = true, backgroundColor = 0xFF121212, uiMode = Configuration.UI_MODE_NIGHT_YES)
 @Composable
 fun PreviewMovieItem() {
     NeugelbChallangeAndroidTheme {

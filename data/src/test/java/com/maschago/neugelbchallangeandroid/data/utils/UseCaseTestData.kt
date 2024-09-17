@@ -39,7 +39,6 @@ internal object MovieTestData {
         )
     )
 
-
     val sampleMoviesList: Response<MovieResponse> = Response.success(
         MovieResponse(
             page = 1,
@@ -94,7 +93,6 @@ internal object MovieTestData {
             totalResults = 3
         )
     )
-
 
 }
 

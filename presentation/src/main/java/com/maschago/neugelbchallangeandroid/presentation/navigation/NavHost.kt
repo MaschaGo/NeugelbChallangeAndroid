@@ -8,10 +8,10 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
 import com.maschago.neugelbchallangeandroid.presentation.ui.screens.MovieDetailsScreen
-import com.maschago.neugelbchallangeandroid.presentation.viewmodel.MovieDetailsViewModel
-import com.maschago.neugelbchallangeandroid.presentation.viewmodel.MovieListViewModel
 import com.maschago.neugelbchallangeandroid.presentation.ui.screens.MovieScreen
 import com.maschago.neugelbchallangeandroid.presentation.ui.screens.SearchScreen
+import com.maschago.neugelbchallangeandroid.presentation.viewmodel.MovieDetailsViewModel
+import com.maschago.neugelbchallangeandroid.presentation.viewmodel.MovieListViewModel
 import com.maschago.neugelbchallangeandroid.presentation.viewmodel.SearchViewModel
 import org.koin.androidx.compose.koinViewModel
 

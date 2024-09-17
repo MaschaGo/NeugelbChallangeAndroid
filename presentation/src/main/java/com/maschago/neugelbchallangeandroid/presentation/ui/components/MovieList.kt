@@ -97,9 +97,8 @@ fun MovieList(
     }
 }
 
-
 @Preview(name = "Light Mode", uiMode = Configuration.UI_MODE_NIGHT_NO)
-@Preview(name = "Dark Mode",showBackground = true, backgroundColor = 0xFF121212, uiMode = Configuration.UI_MODE_NIGHT_YES)
+@Preview(name = "Dark Mode", showBackground = true, backgroundColor = 0xFF121212, uiMode = Configuration.UI_MODE_NIGHT_YES)
 @Composable
 fun PreviewMovieList() {
     val pagingData = flowOf(PagingData.from(sampleMoviesList))

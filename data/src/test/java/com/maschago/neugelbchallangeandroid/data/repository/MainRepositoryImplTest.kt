@@ -1,11 +1,11 @@
 package com.maschago.neugelbchallangeandroid.data.repository
 
 import androidx.paging.PagingSource
-import com.maschago.neugelbchallangeandroid.data.utils.MovieTestData.sampleMovieDetails
-import com.maschago.neugelbchallangeandroid.data.utils.MovieTestData.sampleMoviesList
 import com.maschago.neugelbchallangeandroid.data.model.toMovie
 import com.maschago.neugelbchallangeandroid.data.remote.ApiService
 import com.maschago.neugelbchallangeandroid.data.remote.MoviePagingSource
+import com.maschago.neugelbchallangeandroid.data.utils.MovieTestData.sampleMovieDetails
+import com.maschago.neugelbchallangeandroid.data.utils.MovieTestData.sampleMoviesList
 import com.nhaarman.mockitokotlin2.doReturn
 import com.nhaarman.mockitokotlin2.mock
 import com.nhaarman.mockitokotlin2.times

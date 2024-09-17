@@ -54,7 +54,7 @@ androidx-navigation-compose = { module = "androidx.navigation:navigation-compose
 # Retrofit
 retrofit_core = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
 retrofit_gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit" }
-okhttp-logging = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okHttp"}
+okhttp-logging = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okHttp" }
 mockwebserver = { module = "com.squareup.okhttp3:mockwebserver", version.ref = "okHttp" }
 # Gson
 gson_core = { module = "com.google.code.gson:gson", version.ref = "gson" }

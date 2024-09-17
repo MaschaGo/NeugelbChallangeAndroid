@@ -14,10 +14,10 @@ sealed class ScreenState {
     data class Success(val movieDetails: MovieDetails) : ScreenState()
     data class Error(val message: String) : ScreenState()
 }
+
 class MovieDetailsViewModel(
     private val getMovieDetailsUseCase: GetMovieDetailsUseCase,
 ) : ViewModel() {
-
 
     private val _state = MutableStateFlow<ScreenState>(ScreenState.Loading)
     val state: StateFlow<ScreenState> = _state
@@ -38,8 +38,6 @@ class MovieDetailsViewModel(
             )
         }
     }
-
-
 
 }
 

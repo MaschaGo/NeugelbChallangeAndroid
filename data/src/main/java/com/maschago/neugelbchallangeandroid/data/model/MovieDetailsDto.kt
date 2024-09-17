@@ -32,11 +32,11 @@ data class MovieDetailsDto(
 
 
 fun MovieDetailsDto.toMovieDetails() = MovieDetails(
-    isAdult,     backdropPath,    budget,    genre?.map { it.toMovieDetails() },
-    homepage,    id,    imdbId,    originCountry,    originalLanguage,
-    originalTitle,    overview,    popularity,    posterPath,    releaseDate?.toDayMonthYearDateFormat(),
-    releaseDate?.extractYearFromDate(),    revenue,    spokenLanguageResponses.map { it.toMovieDetails() },
-    title,    voteAverage,    voteCount
+    isAdult, backdropPath, budget, genre?.map { it.toMovieDetails() },
+    homepage, id, imdbId, originCountry, originalLanguage,
+    originalTitle, overview, popularity, posterPath, releaseDate?.toDayMonthYearDateFormat(),
+    releaseDate?.extractYearFromDate(), revenue, spokenLanguageResponses.map { it.toMovieDetails() },
+    title, voteAverage, voteCount
 )
 
 data class SpokenLanguageResponse(

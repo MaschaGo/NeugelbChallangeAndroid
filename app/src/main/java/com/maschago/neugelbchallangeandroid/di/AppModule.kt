@@ -7,9 +7,9 @@ import org.koin.dsl.module
 
 
 val provideAppModules = module {
-        includes(
-            viewModelModule,
-            domainModule,
-            dataModule,
-        )
-    }
+    includes(
+        viewModelModule,
+        domainModule,
+        dataModule,
+    )
+}

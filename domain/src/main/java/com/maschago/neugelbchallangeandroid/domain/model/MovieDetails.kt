@@ -21,19 +21,19 @@ data class MovieDetails(
     val spokenLanguage: List<SpokenLanguage>?,
     val title: String?,
     val voteAverage: Float?,
-    val voteCount: Int?
+    val voteCount: Int?,
 )
 
 data class SpokenLanguage(
     val englishName: String,
-    val name: String?
+    val name: String?,
 )
 
 fun List<SpokenLanguage>?.spokenLanguageAsString(): String = this?.joinToString { it.name ?: it.englishName } ?: "N/A"
 
 data class Genre(
     val id: Int,
-    val name: String
+    val name: String,
 )
 
 fun List<Genre>?.genresAsString(): String = this?.joinToString { it.name } ?: "N/A"

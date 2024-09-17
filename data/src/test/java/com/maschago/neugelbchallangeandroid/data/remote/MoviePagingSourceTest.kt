@@ -1,7 +1,7 @@
 package com.maschago.neugelbchallangeandroid.data.remote
 
-import com.maschago.neugelbchallangeandroid.data.utils.enqueueResponse
 import com.maschago.neugelbchallangeandroid.data.model.toMovie
+import com.maschago.neugelbchallangeandroid.data.utils.enqueueResponse
 import kotlinx.coroutines.runBlocking
 import kotlinx.coroutines.test.runTest
 import okhttp3.OkHttpClient
@@ -43,7 +43,6 @@ class MoviePagingSourceTest {
         // Shut down the server after tests
         mockWebServer.shutdown()
     }
-
 
     @Test
     fun `getMovieDetails should return failure when API call fails`() = runTest {

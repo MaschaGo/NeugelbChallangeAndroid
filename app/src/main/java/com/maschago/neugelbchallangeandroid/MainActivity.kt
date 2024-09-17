@@ -12,9 +12,9 @@ import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.navigation.compose.rememberNavController
-import com.maschago.neugelbchallangeandroid.presentation.ui.components.CustomAppBar
-import com.maschago.neugelbchallangeandroid.presentation.navigation.NavHost
 import com.maschago.neugelbchallangeandroid.core.ui.theme.NeugelbChallangeAndroidTheme
+import com.maschago.neugelbchallangeandroid.presentation.navigation.NavHost
+import com.maschago.neugelbchallangeandroid.presentation.ui.components.CustomAppBar
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

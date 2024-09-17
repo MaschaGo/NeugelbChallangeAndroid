@@ -18,6 +18,6 @@ interface ApiService {
     @GET("search/movie")
     suspend fun searchMovies(
         @Query("query") query: String,
-        @Query("page") page: Int
+        @Query("page") page: Int,
     ): Response<MovieResponse>
 }

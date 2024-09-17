@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.maschago.neugelbchallangeandroid.domain"
-    compileSdk =  (rootProject.extra["compileSdk"] as Int)
+    compileSdk = (rootProject.extra["compileSdk"] as Int)
 
     defaultConfig {
         minSdk = (rootProject.extra["minSdk"] as Int)
@@ -45,9 +45,8 @@ dependencies {
     testImplementation(libs.paging.test)
     testImplementation(libs.mockwebserver)
 
-    androidTestImplementation (libs.mockk.android)
+    androidTestImplementation(libs.mockk.android)
     androidTestImplementation(libs.test.ext)
     androidTestImplementation(libs.test.espresso)
-
 
 }

@@ -15,7 +15,6 @@ import org.junit.Test
 
 class SearchMoviesUseCaseTest {
 
-
     private lateinit var repository: MainRepository
     private lateinit var useCase: SearchMoviesUseCase
 

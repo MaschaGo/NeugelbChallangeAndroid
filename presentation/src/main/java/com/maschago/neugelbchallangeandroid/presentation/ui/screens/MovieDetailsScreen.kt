@@ -1,7 +1,6 @@
 package com.maschago.neugelbchallangeandroid.presentation.ui.screens
 
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.runtime.Composable
@@ -24,9 +23,6 @@ fun MovieDetailsScreen(
     val state by viewModel.state.collectAsState()
     Column(
         modifier = modifier
-            .padding(
-
-            )
             .verticalScroll(rememberScrollState()),
     ) {
         when (state) {

@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.maschago.neugelbchallangeandroid.presentation"
-    compileSdk =  (rootProject.extra["compileSdk"] as Int)
+    compileSdk = (rootProject.extra["compileSdk"] as Int)
 
     defaultConfig {
         minSdk = (rootProject.extra["minSdk"] as Int)
@@ -41,8 +41,8 @@ android {
 
 dependencies {
 
-    implementation (project(":domain"))
-    implementation (project(":core"))
+    implementation(project(":domain"))
+    implementation(project(":core"))
 
     implementation(libs.core.ktx)
 
